@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Continue"
-Set-Location "C:\Users\swgtl\Desktop\pythonprojectwithclaude"
+Set-Location $PSScriptRoot
 
-$python = "C:\Users\swgtl\AppData\Local\Python\pythoncore-3.14-64\python.exe"
+$python = (Get-Command python).Source
 $log = "output\pipeline.log"
 New-Item -ItemType Directory -Force -Path output | Out-Null
 

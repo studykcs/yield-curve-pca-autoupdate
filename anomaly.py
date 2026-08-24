@@ -21,7 +21,7 @@ from pathlib import Path
 import pandas as pd
 
 from store import get_connection, load_yields
-from testcode import OUT, PCAResult, run_pca
+from pca import OUT, PCAResult, run_pca
 
 PC_LABELS = {"PC1": "Level", "PC2": "Slope", "PC3": "Curvature"}
 ALERT_LOG = OUT / "alerts.json"

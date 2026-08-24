@@ -1,7 +1,7 @@
 """Fetch government bond yields from the FRED API.
 
 Pulls the constant-maturity Treasury yield series that correspond to the
-tenors used in ``testcode.py`` (1Y, 2Y, 3Y, 5Y, 10Y, 20Y) and returns them in
+tenors used in ``pca.py`` (1Y, 2Y, 3Y, 5Y, 10Y, 20Y) and returns them in
 the same shape ``load_yields`` produces: a DataFrame indexed by date, one
 column per tenor, values in percent.
 

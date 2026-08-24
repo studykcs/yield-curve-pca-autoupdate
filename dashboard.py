@@ -1,6 +1,6 @@
 """Single-file HTML dashboard for the yield curve PCA.
 
-Reads yields from SQLite (see collect.py), runs PCA (see testcode.py) and
+Reads yields from SQLite (see collect.py), runs PCA (see pca.py) and
 writes one self-contained HTML report: charts, data and the Plotly.js
 library are all embedded in the file, so it opens directly in a browser
 with no server and no internet connection needed.
@@ -24,7 +24,7 @@ from plotly.subplots import make_subplots
 
 from anomaly import MACRO_CONTEXT, detect_anomalies
 from store import get_connection, load_yields
-from testcode import OUT, PCAResult, reconstruction_r2, run_pca
+from pca import OUT, PCAResult, reconstruction_r2, run_pca
 
 PC_NAMES = {"PC1": "Level", "PC2": "Slope", "PC3": "Curvature"}
 
